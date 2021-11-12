@@ -116,10 +116,12 @@ cp circuitpython/examples/mime_mearm.py /Volumes/CIRCUITPY/code.py
 
 ### Tracker
 
+Polyphonic (4 voices) sample based 'grid' music tracker demo.
+
 Uses:
 -    Pimoroni Pirate Audio
 -    Pimoroni Piano Hat (Framboisdorf)
--    Pimeroni HAcker Hat
+-    Pimoroni HAcker Hat
 -    4Tronix bit:2:pi
 
 ```
