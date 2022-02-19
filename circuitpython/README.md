@@ -1,26 +1,38 @@
 # Install Circuit Python
 
-## Nano Connect
-```
-cp circuitpython/install/nano_rp2040.uf2  /Volumes/RPI-RP2/
-cp -r circuitpython/lib/nanobit/*         /Volumes/CIRCUITPY/lib/
-```
+From the root of the repository run `./circuitpython/install/setup.sh` to download circuitpython dependacies.
 
-## PiPico
+Then depending on the target board, run either the NanoBit or PicoBit library install:
 
-```
-cp circuitpython/install/pi_pico.uf2  /Volumes/RPI-RP2/
-cp -r circuitpython/lib/picobit/*     /Volumes/CIRCUITPY/lib/
-```
-
-## For all
-
+## NanoBit library install
 ```
 CPLIB=circuitpython/install/lib
+cp circuitpython/install/nano_rp2040.uf2  /Volumes/RPI-RP2/
+
+# Wait for reboot and /Volumes/CIRCUITPY to appear in Finder
+
+cp -r circuitpython/lib/nanobit/*   /Volumes/CIRCUITPY/lib/
 cp -r circuitpython/lib/shared/*   /Volumes/CIRCUITPY/lib/
 ```
 
+## PicoBit library install
+
+```
+CPLIB=circuitpython/install/lib
+cp circuitpython/install/pi_pico.uf2  /Volumes/RPI-RP2/
+
+# Wait for reboot and /Volumes/CIRCUITPY to appear in Finder
+
+cp -r circuitpython/lib/picobit/*  /Volumes/CIRCUITPY/lib/
+cp -r circuitpython/lib/shared/*   /Volumes/CIRCUITPY/lib/
+```
+
+
 ## Examples
+
+Run from the root of the repository the scritps in each example section.
+
+Remember to put the PicoBit into bootloader mode (hold down `BOOTSEL` when powering on).
 
 ### i2c Scanner
 
