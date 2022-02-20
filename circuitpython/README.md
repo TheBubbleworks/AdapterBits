@@ -1,6 +1,6 @@
 # Install Circuit Python
 
-From the root of the repository run `./circuitpython/install/setup.sh` to download circuitpython dependacies.
+From the root of the repository run `./circuitpython/install/setup.sh` to download circuitpython dependancies.
 
 Then depending on the target board, run either the NanoBit or PicoBit library install:
 
