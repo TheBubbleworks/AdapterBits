@@ -1,3 +1,4 @@
 .idea
 circuitpython/install/lib
 .DS_Store
+build
